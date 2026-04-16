@@ -96,6 +96,7 @@ termux-wake-lock
 
 ```bash
 npm i -g pm2
+```
 
 ```bash
 pm2 start index.js --name kaynbot

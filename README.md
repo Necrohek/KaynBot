@@ -43,7 +43,7 @@ Si editas el bot, debes mantener los créditos principales y no borrarlos bajo n
 ### Instalaciónes Básicas
 
 <details>
-<summary><strong>🇪🇪 Termux</strong> — Shell</summary>
+<summary><strong>🇪🇪 Termux</strong> — Manual</summary>
 
 ```bash
 termux-setup-storage

@@ -174,9 +174,12 @@ const selfId = client.user.id.split(':')[0] + '@s.whatsapp.net'
 
 if (botprimaryId && botprimaryId !== selfId) {
   if (hasPrefix) {
-    const participants = m.isGroup
-      ? (await client.groupMetadata(m.chat).catch(() => ({ participants: [] }))).participants
-      : []
+    let participants = []
+
+if (m.isGroup) {
+  const metadata = await client.groupMetadata(m.chat).catch(() => ({ participants: [] }))
+  participants = metadata.participants || []
+}
     const primaryInGroup = participants.some(p =>
       (p.phoneNumber || p.id) === botprimaryId
     )

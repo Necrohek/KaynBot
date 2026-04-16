@@ -1,5 +1,5 @@
 <p align="center"> 
-<https://i.imgur.com/e1C1CH2.jpeg>
+<img width="1280" height="713" alt="e1C1CH2" src="https://github.com/user-attachments/assets/c15fd73c-32f6-4956-b986-18a93ca839c5" />
 
 <p align="center"> 
 <a href="#"><img title="KaynBot" src="https://img.shields.io/badge/¡Disfruta de un Bot totalmente gratuito, con múltiples funciones y de código abierto! -purple?colorA=%239b33b0&colorB=%231c007b&style=for-the-badge"></a> 
@@ -41,42 +41,107 @@ Si editas el bot, debes mantener los créditos principales y no borrarlos bajo n
 ---
 
 ### Instalaciónes Básicas
-termux-setup-storage
-apt update && apt upgrade -y
-pkg install -y git nodejs-lts ffmpeg imagemagick
-git clone https://github.com/Necrohek/KaynBot
-cd KaynBot
-rm -rf node_modules package-lock.json
-npm install
-npm rebuild
-npm start
-Si aparece (Y/I/N/O/D/Z) [default=N] ? usa la letra "y" y presiona ENTER
-________________________________________
-Ejecutar dentro de la carpeta KaynBot
-termux-wake-lock
-npm i -g pm2
-pm2 start index.js --name kaynbot
-pm2 save
-pm2 logs
-Opciones Disponibles
-Eliminar proceso del bot:
-pm2 delete kaynbot
-Ver ejecución:
-pm2 logs
-Detener bot:
-pm2 stop kaynbot
-Iniciar bot:
-pm2 start kaynbot
-________________________________________
-En caso de detenerse
-Si Termux se cerró, se fue el internet o reiniciaste el dispositivo:
-cd KaynBot && npm start
-________________________________________
-Obtener nuevo inicio de sesión
-Detén el bot con CTRL + Z hasta ver algo como KaynBot $
-cd KaynBot && rm -rf Sessions && npm start
 
----
+<details>
+<summary><strong>🦦 Cloud</strong> — Shell</summary>
+
+```bash
+termux-setup-storage
+```
+
+```bash
+apt update && apt upgrade -y
+```
+
+```bash
+pkg install -y git nodejs-lts ffmpeg imagemagick
+```
+
+```bash
+git clone https://github.com/Necrohek/KaynBot
+```
+
+```bash
+cd KaynBot
+```
+
+```bash
+rm -rf node_modules package-lock.json
+```
+
+```bash
+npm install
+```
+
+```bash
+npm rebuild
+```
+
+```bash
+npm start
+```
+
+> Si aparece (Y/I/N/O/D/Z) [default=N] ? usa la letra "y" y presiona ENTER.
+
+</details>
+
+<details>
+<summary><strong>🇪🇪 Comandos para tener mas tiempo activo</strong> — el Bot</summary>
+ 
+> Ejecutar dentro de la carpeta KaynBot
+
+```bash
+termux-wake-lock
+```
+
+```bash
+npm i -g pm2
+
+```bash
+pm2 start index.js --name kaynbot
+```
+
+```bash
+pm2 save
+```
+
+```bash
+pm2 logs
+```
+
+#### Opciones Disponibles
+> Eliminar proceso del bot:
+
+```bash 
+pm2 delete kaynbot
+``` 
+
+> Ver ejecución:
+
+```bash 
+pm2 logs
+```
+
+> Detener bot:
+
+```bash 
+pm2 stop kaynbot
+```
+
+> Iniciar bot:
+
+```bash 
+pm2 start kaynbot
+```
+
+--- 
+
+### En caso de detenerse
+> Si Termux se cerró, se fue el internet o reiniciaste el dispositivo:
+cd KaynBot && npm start
+
+--- 
+
 
 ### Obtener nuevo inicio de Sessión 
 > *Detén el bot, haz click en el símbolo (ctrl) [default=z] usar la letra "z" + "ENTER" hasta que salga algo verdes similar a: `	KaynBot $`*
